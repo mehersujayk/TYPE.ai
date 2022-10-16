@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+ 
+  <meta charset="utf-8" /> <!-- Specifies the character encoding for the HTML document -->
+	<meta name="author" content="Ronit Batchu">
+    <title> Type.Ai </title>
+    <link rel="stylesheet"  media = "all" type = "text/css" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>  
+ 
+</head>
+  <!--Creates header and nav bar at the top of the page-->
+<body>
+  <py-env>
+    - msvcrt
+    - difflib
+    - spacy
+  </py-env>
+  <header>
+      <div id="header">
+          <div id="interior">
+                <div id="logo">
+                    <h1 id = "h1Head"> TYPE.ai </h1>
+                </div>
+          </div>
+      </div>
+  </header>
+  <form onsubmit="return false" style="position:relative; background-color:rgb(233, 233, 233)">
+    <label for="name">Subject:</label><br>
+    <input type="text" id="subject" name="subject"><br>
+
+    <input pys-onClick="sub" type="submit" id="btn-form" value="submit">  
+
+  </form> 
+  <div>
+      <div class="row">
+          <div class="column" style="position:relative; background-color:rgb(233, 233, 233)">
+            <h2>Type the Sentence as Fast as Possible in the Below Textbox</h2>
+                <p id = 'text'></p>
+            <form>
+              <textarea"> </textarea>
+            </form>            
+          </div>
+          <div class="column" style="background-color:rgb(233, 233, 233);">
+            <h2>Most Commonly Misspelled Words</h2>
+            <p id = 'word_list'></p>
+          </div>
+      </div>
+  </div>
+
+  <py-script src = "main.py">
+    input = Element("subject")
+    textout = Element('text')
+    wrong_words = Element('word_list')
+
+    def sub (*args, **kwargs):
+      textout.write(get_diagnose(input))
+      wrong_words.write(get_wrong_words(textout[0],[]))
+
+  </py-script>
+</body> 
+ 
+</html>

@@ -1,0 +1,211 @@
+body {
+    font-family:"Avenir";
+
+    font-size: 100%;
+    
+    line-height: 1.7em; 
+    background-color: rgb(75, 70, 70);
+}
+
+#indexBody 
+{
+  background-color: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(185,10,250,1) 55%, rgba(0,212,255,1) 100%);;
+}
+
+#titleMain 
+{
+    font-family: "Fanwood Text";
+    color:white;
+    font-weight:normal;
+    text-align: center;
+    padding-top: 18%;
+    font-size: 10em;
+}
+
+h2{
+    font-family: "Avenir";
+    color: hsl(0, 4%, 10%); /* Good contrast color for heading */
+    font-size: 1.25em; /* http://pxtoem.com/*/
+   }
+
+h3 {
+    font-family: "Avenir";
+    font-size: 1.125em;
+    font-weight: 400;
+    /* sets how thick or thin characters in text should be displayed. */
+}
+
+h1 
+{
+    font-family: "Fanwood Text";
+}
+
+#form 
+{
+    font-family: "Avenir";
+    float:right;
+}
+
+button 
+{
+    font-family: "Avenir";
+}
+
+
+a
+{
+    font-family: "Avenir";
+    color:#000000;
+    text-decoration: none;
+}
+
+#content a
+{
+    color:black;
+}
+
+tr
+{
+    font-family:"Avenir";
+}
+th
+{
+    font-family:"Avenir";
+}
+
+table, th, td {
+    border: 1px solid;
+}
+
+#content a:hover
+{
+    color:#0F4970;
+}
+
+#content h1 
+{
+    text-align:center;
+}
+
+/* Sets hover color and underlines text when there is a mouse hover */
+a:hover{
+    color:#0F4970;
+    text-decoration:underline;
+}
+
+/* Header style settings. Makes the header black */
+#header 
+{
+    width:100%; 
+    height: 100px; 
+    display: block; 
+    background-color: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(185,10,250,1) 55%, rgba(0,212,255,1) 100%);;
+}
+
+
+#interior
+{
+    width: 1000px; 
+    height: 100; 
+    display: block;
+    margin: auto; 
+}
+
+#logo 
+{
+    height: 75px; 
+    display: table; 
+    float: left; 
+}
+
+/* Color and font settings for Pamela's diner text in the top left corner*/
+#logo h1 
+{
+    color: rgb(255, 255, 255); 
+    height: 90%; 
+    display: table-cell; 
+    vertical-align: middle;
+    font-family: "Fanwood";
+    font-size: 60px;
+    padding-top: 30px;
+    padding-left: 360px;
+    font-weight:normal
+}
+
+
+
+#container-location
+{
+    text-align:center;
+}
+
+
+
+.inner{
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px;
+}
+  
+hr 
+{
+   border: 3px solid rgb(0, 0, 0);
+   width: 30%;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 1000px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  p
+  {
+    color:rgb(0, 0, 0);
+  }
+
+  textarea {
+    width: 100%;
+    height: 600px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 30px;
+    font:"Avenir";
+  }
+
+.topnav {
+    padding-left:500px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 20px;
+  }
+.input
+{
+   padding-left:500px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 50px;
+}
+  
